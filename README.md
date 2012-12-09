@@ -1,4 +1,4 @@
 maven
 =====
 
-Maven repository for artifact, which are not in Maven central
+Maven repository for artifacts, which are not in Maven Central
