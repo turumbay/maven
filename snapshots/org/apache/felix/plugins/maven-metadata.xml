@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>Maven OSGi Plugin</name>
+      <prefix>osgi</prefix>
+      <artifactId>maven-osgi-plugin</artifactId>
+    </plugin>
+  </plugins>
+</metadata>

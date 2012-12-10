@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.apache.felix.plugins</groupId>
+  <artifactId>maven-osgi-plugin</artifactId>
+  <versioning>
+    <latest>0.9.0-SNAPSHOT</latest>
+    <versions>
+      <version>0.9.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20121210190453</lastUpdated>
+  </versioning>
+</metadata>
