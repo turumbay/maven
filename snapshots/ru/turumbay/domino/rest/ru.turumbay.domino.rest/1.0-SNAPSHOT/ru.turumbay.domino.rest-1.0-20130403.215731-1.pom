@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <parent>
+        <relativePath>../poms/compiled/</relativePath>
+        <groupId>ru.turumbay.sadco.project.build</groupId>
+        <artifactId>compiled-bundle-settings</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <properties>
+        <bundle.symbolicName>ru.turumbay.domino.rest</bundle.symbolicName>
+        <bundle.namespace>ru.turumbay.domino.rest</bundle.namespace>
+    </properties>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>ru.turumbay.domino.rest</groupId>
+    <artifactId>ru.turumbay.domino.rest</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>${bundle.symbolicName}</name>
+
+    <packaging>bundle</packaging>
+
+    <repositories>
+        <repository>
+            <id>restlet</id>
+            <url>http://maven.restlet.org</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>lotus.domino</groupId>
+            <artifactId>notes</artifactId>
+            <version>8.5.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.domino</groupId>
+            <artifactId>com.ibm.domino.osgi.core</artifactId>
+            <version>8.5.3.20110915-2025</version>
+            <optional>true</optional>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.domino</groupId>
+            <artifactId>com.ibm.domino.napi</artifactId>
+            <version>8.5.3.20110915-2025</version>
+            <optional>true</optional>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.4</version>
+            <optional>true</optional>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>osgi_R4_compendium</artifactId>
+            <optional>true</optional>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scalatest</groupId>
+            <artifactId>scalatest_2.9.2</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.restlet.osgi</groupId>
+            <artifactId>org.restlet</artifactId>
+            <version>2.1.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.restlet.jee</groupId>
+            <artifactId>org.restlet.ext.servlet</artifactId>
+            <version>2.1.0</version>
+            <scope>compile</scope>
+        </dependency>
+
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.scala-tools</groupId>
+                <artifactId>maven-scala-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <argLine>-d32</argLine>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+    <distributionManagement>
+        <repository>
+            <id>repo</id>
+            <url>https://github.com/turumbay/maven/raw/master/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshot-repo</id>
+            <url>https://github.com/turumbay/maven/raw/master/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>
