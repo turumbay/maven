@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>ru.turumbay.sadco.project</groupId>
+  <artifactId>org.scala-lang.scala-library</artifactId>
+  <versioning>
+    <versions>
+      <version>2.9.2-001-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20130514222152</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>ru.turumbay.sadco.project</groupId>
+  <artifactId>lotus.domino.notes</artifactId>
+  <versioning>
+    <versions>
+      <version>8.5.3-001-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20130514222153</lastUpdated>
+  </versioning>
+</metadata>

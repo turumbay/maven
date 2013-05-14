@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>ru.turumbay.sadco</groupId>
+  <artifactId>ru.turumbay.sadco.core</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20130514222129</lastUpdated>
+  </versioning>
+</metadata>

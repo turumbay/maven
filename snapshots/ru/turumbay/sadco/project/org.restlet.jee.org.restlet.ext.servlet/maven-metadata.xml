@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>ru.turumbay.sadco.project</groupId>
+  <artifactId>org.restlet.jee.org.restlet.ext.servlet</artifactId>
+  <versioning>
+    <versions>
+      <version>2.1.0-001-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20130514222153</lastUpdated>
+  </versioning>
+</metadata>
